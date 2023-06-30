@@ -1,0 +1,10 @@
+Para la construcción de este programa se requiere de un dominio sobre punteros; con distintas técnicas 
+relacionadas al paso de argumentos, se pueden optimizar procesos y hacer posible el paso de información
+entre las funciones y el main. Esto último es necesario para lograr que el programa cumpla con las opciones
+que ofrece, que son el registro de mascotas, asociación de servicios a estas mismas, y la facturación de 
+los servicios.
+
+Como recomendaciones puedo añadir: hacer uso de téncicas más avanzadas para reducir la extensión del código,
+replantear ciertas variables o borrarlas teniendo en cuenta las ventajas que el manejo de memoria y el uso
+de estructuras ofrecen, y cambiar el diseño del programa para que se admitan distintas mascotas y servicios
+simultáneamente.

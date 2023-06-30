@@ -72,10 +72,15 @@ void mFactura(char *opc1, char *opc2, char *opc3, char *opc4, char *opc5, int *s
     printf("Nombre del Dueño: %s\n",opc5);
     printf("Nombre de la Mascota: %s\n",opc2);
     printf("ID de la Mascota: %s\n",opc1);
+
     for (i = 0; i < 4; i++)
     {
-        printf("Servicio %d: %s\n",i+1,serviciosm[0][i]);
+        if (cantidad[i]>0)
+        {
+            printf("Servicio %d: %s\n",i+1,serviciosm[0][i]);
+        }
     }
+    
     for (i = 0; i < 4; i++)
     {
         if (precios[i]==0)
@@ -84,7 +89,11 @@ void mFactura(char *opc1, char *opc2, char *opc3, char *opc4, char *opc5, int *s
         }else
         {
             precioscantidad[i]=precios[i]*cantidad[i];
-            printf("Precio Servicio %d (unitario $%d): $%d\n",i+1,precios[i],precioscantidad[i]);
+            
+            if (cantidad[i]>0)
+            {
+                printf("Precio Servicio %d (unitario $%d): $%d\n",i+1,precios[i],precioscantidad[i]);
+            }
         }
     }
     for (i = 0; i < 4; i++)
